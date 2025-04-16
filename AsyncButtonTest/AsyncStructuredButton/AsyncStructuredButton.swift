@@ -1,5 +1,5 @@
 //
-//  AsyncFixedGoogledButton.swift
+//  AsyncStructuredButton.swift
 //  AsyncButtonTest
 //
 //  Created by Daniel Bolella on 4/15/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AsyncFixedGoogledButton<Label: View>: View {
+struct AsyncStructuredButton<Label: View>: View {
     var action: () async throws -> Void
     @ViewBuilder var label: () -> Label
     let errorHandler: (any Error) -> Void

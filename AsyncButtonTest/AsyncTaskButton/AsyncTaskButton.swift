@@ -37,7 +37,11 @@ struct AsyncTaskButton<Label: View>: View {
             } catch is CancellationError {
                 print("Task was cancelled")
             } catch {
-                errorHandler(error)
+                if Task.isCancelled {
+                    print("Task was cancelled")
+                } else {
+                    errorHandler(error)
+                }
             }
             isRunning = false
         }

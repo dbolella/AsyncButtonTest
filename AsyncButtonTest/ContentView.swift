@@ -31,10 +31,10 @@ struct ContentView: View {
                 }
                 
                 NavigationLink {
-                    FixedGoogledTestView()
-                        .navigationTitle("Fixed Googled")
+                    StructuredTestView()
+                        .navigationTitle("Structured")
                 } label: {
-                    Text("Fixed Googled")
+                    Text("Structured")
                 }
             }
             .padding()
